@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#sect-1{
+	background-image: url(im1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#sect-1 nav{
+	background-color: transparent;
+	margin-bottom: 50px;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: end;
+	margin: 0 50px 0 0;
+	padding-top: 20px;
+}
+
+nav ul li a{
+	margin-right: 30px;
+	margin-top: 10px;
+	padding: 0 10px 20px 0;
+	text-decoration: none;
+	font-size: 14pt;
+	color: #fff;
+}
+
+nav ul li a:hover{
+	border-bottom: solid #fff 2px;
+}
+#sect-1 article{
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
+}
+
+#sect-1 article h1{
+	font-size: 20pt;
+	text-transform: uppercase;
+	margin: 0 10px 10px 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+#sect-1 article p{
+	font-size: 16pt;
+	text-transform: capitalize;
+	text-align: left;
+	margin: 10px 10px 0 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#sect-1 article p .eu{
+	background-color: #fff;
+	color: #000;
+}
+
+#sect-2{
+	display: flex;
+}
+
+#sect-2 article{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#sect-2 article p{
+	font-size: 14pt;
+	text-align: left;
+	margin: 50px 10px 20px 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sect-3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: "social projetos cv";
+	background-color: #000;
+	height: 200px;
+	justify-items: center;
+	align-items: center;
+	color: #fff;
+}
+
+#sect-3 .social{
+	grid-area: social;
+}
+
+#sect-3 .social h2{
+	height: 30px; 
+}
+
+#sect-3 .social a{
+	margin: 0 20px 0 10px;
+	color: #000;
+	padding: 20px 10px 10px 10px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+#sect-3 .social .tw:hover{
+	background-color: #1da1f2;
+	color: #fff;
+	transition: .5s;
+}
+
+#sect-3 .social .ml:hover{
+	background-color: #9397cd;
+	color: #fff;
+	transition: .5s;
+}
+
+#sect-3 .social .lin:hover{
+	background-color: #0077b5;
+	color: #fff;
+	transition: .5s;
+}
+
+#sect-3 .projeto{
+	grid-area: projetos;
+}
+
+#sect-3 .projeto a{
+	background-color: #fff;
+	color: #000;
+	margin: 0 20px 0 70px;
+	padding: 20px 10px 10px 10px;
+	border-radius: 15px;
+}
+
+#sect-3 .projeto a:hover{
+	background-color: #000;
+	color: #fff;
+	transition: .5s;
+}
+
+#sect-3 .cv{
+	grid-area: cv;
+}
+
+#sect-3 .cv a{
+	background-color: #fff;
+	margin-left: 30px;
+	margin-right: 20px;
+	color: #000;
+	padding: 20px 15px 10px 15px;
+	border-radius: 15px;
+}
+
+#sect-3 .cv a:hover{
+	background-color: #6cda3c;
+	color: #fff;
+	transition: .5s;
+}
+
+@media (min-width: 801px){
+	#sect-1 nav{
+		display: none;
+	}
+}
+
+@media (max-width: 800px){
+	#sect-1{
+		display: block; 
+	}
+	#sect-3{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas:
+		"social"
+		"projetos"
+		"cv";
+		min-height: 400px;
+	}
+}
