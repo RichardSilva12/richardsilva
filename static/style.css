@@ -71,23 +71,23 @@ nav ul li a:hover{
 	color: #000;
 }
 
-#sect-2{
+#sobre{
 	display: flex;
 }
 
-#sect-2 article{
+#sobre article{
 	display: flex;
 	flex-flow: column wrap;
 }
 
-#sect-2 article p{
+#sobre article p{
 	font-size: 14pt;
 	text-align: left;
 	margin: 50px 10px 20px 40px;
     font-family: 'Montserrat', sans-serif;
 }
 
-#sect-3{
+#contato{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas: "social projetos cv";
@@ -98,15 +98,15 @@ nav ul li a:hover{
 	color: #fff;
 }
 
-#sect-3 .social{
+#contato .social{
 	grid-area: social;
 }
 
-#sect-3 .social h2{
+#contato .social h2{
 	height: 30px; 
 }
 
-#sect-3 .social a{
+#contato .social a{
 	margin: 0 20px 0 10px;
 	color: #000;
 	padding: 20px 10px 10px 10px;
@@ -114,29 +114,29 @@ nav ul li a:hover{
 	background-color: #fff;
 }
 
-#sect-3 .social .tw:hover{
+#contato .social .tw:hover{
 	background-color: #1da1f2;
 	color: #fff;
 	transition: .5s;
 }
 
-#sect-3 .social .ml:hover{
+#contato .social .ml:hover{
 	background-color: #9397cd;
 	color: #fff;
 	transition: .5s;
 }
 
-#sect-3 .social .lin:hover{
+#contato .social .lin:hover{
 	background-color: #0077b5;
 	color: #fff;
 	transition: .5s;
 }
 
-#sect-3 .projeto{
+#contato .projeto{
 	grid-area: projetos;
 }
 
-#sect-3 .projeto a{
+#contato .projeto a{
 	background-color: #fff;
 	color: #000;
 	margin: 0 20px 0 70px;
@@ -144,17 +144,17 @@ nav ul li a:hover{
 	border-radius: 15px;
 }
 
-#sect-3 .projeto a:hover{
+#contato .projeto a:hover{
 	background-color: #000;
 	color: #fff;
 	transition: .5s;
 }
 
-#sect-3 .cv{
+#contato .cv{
 	grid-area: cv;
 }
 
-#sect-3 .cv a{
+#contato .cv a{
 	background-color: #fff;
 	margin-left: 30px;
 	margin-right: 20px;
@@ -163,7 +163,7 @@ nav ul li a:hover{
 	border-radius: 15px;
 }
 
-#sect-3 .cv a:hover{
+#contato .cv a:hover{
 	background-color: #6cda3c;
 	color: #fff;
 	transition: .5s;
@@ -179,7 +179,7 @@ nav ul li a:hover{
 	#sect-1{
 		display: block; 
 	}
-	#sect-3{
+	#contato{
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
 		grid-template-areas:
